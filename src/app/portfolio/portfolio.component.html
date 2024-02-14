@@ -1,0 +1,87 @@
+<section class="d-flex justify-content-center align-items-center position-relative flex-column ">
+    <div class="py-5 text-center pt-5 w-75  text-center contact-title" style="color: #2c3e50;">
+        <h2 class="text-uppercase mb-3 fs-1 fw-bolder">PORTFOLIO COMPONENT</h2>
+        <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="line me-3" style="background-color:  #2c3e50;"></div>
+            <div class="d-flex justify-content-center"><i class=" icon-star fa-solid fa-star text-center"></i></div>
+            <div class="line me-3" style="background-color:  #2c3e50;"></div>
+        </div>
+        
+    </div>
+
+    <!-- we will design here portfolio section insha'allah -->
+   <div class="container py-5">
+    <div class="row  g-5 py-5">
+        <div class="col-md-4">
+            <div class="position-relative item  overflow-hidden">
+                <img #image1 src="./assets/imgs/imgs2.png" alt="imgNumber2" class="w-100 rounded-3 " (click)="openModal(image1.src)">
+
+                <div class="layer rounded-3">
+                    <i class="fa-solid fa-plus text-white fw-bold display-1 "></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative item  overflow-hidden">
+                <img #image2 src="./assets/imgs/imgs3.png" alt="imgNumber3" class="w-100 rounded-3 " (click)="openModal(image2.src)">
+
+                <div class="layer rounded-3">
+                    <i class="fa-solid fa-plus text-white fw-bold display-1 "></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative item  overflow-hidden">
+                <img #image3 src="./assets/imgs/imgs4.png" alt="imgNumber4" class="w-100 rounded-3 " (click)="openModal(image3.src)">
+
+                <div class="layer rounded-3">
+                    <i class="fa-solid fa-plus text-white fw-bold display-1 "></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative item  overflow-hidden">
+                <img #image4 src="./assets/imgs/imgs2.png" alt="imgNumber2" class="w-100 rounded-3 " (click)="openModal(image4.src)">
+
+                <div class="layer rounded-3">
+                    <i class="fa-solid fa-plus text-white fw-bold display-1 "></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative item overflow-hidden ">
+                <img #image5 src="./assets/imgs/imgs3.png" alt="imgNumber3" class="w-100 rounded-3 " (click)="openModal(image5.src)">
+
+                <div class="layer rounded-3">
+                    <i class="fa-solid fa-plus text-white fw-bold display-1 "></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative item overflow-hidden ">
+                <img #image6 src="./assets/imgs/imgs4.png" alt="imgNumber4" class="w-100 rounded-3 " (click)="openModal( image6.src)">
+
+                <div class="layer rounded-3">
+                    <i class="fa-solid fa-plus text-white fw-bold display-1 "></i>
+                </div>
+            </div>
+            
+        </div>
+       
+       
+       
+    </div>
+   </div>
+</section>
+
+<!-- modal -->
+<section *ngIf="modalVisible" class="my-modal position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+    <div class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+        <img [src]="modalImageSrc" alt="img2" class="w-75 rounded">
+    </div>
+</section>

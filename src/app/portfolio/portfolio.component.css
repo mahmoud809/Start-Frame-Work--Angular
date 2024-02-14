@@ -1,0 +1,41 @@
+section{
+    background-color: #ffffff;
+}
+section .line{
+    width: 5rem;
+    height: .25rem;
+    margin-inline: 13px;
+}
+.contact-title{
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 90%;
+}
+section .row {
+    margin-top: 112px;
+}
+.layer {
+    width: 100%;
+
+    background-color: rgba(26, 188, 156, 0.9);
+    
+    position: absolute;
+    top: 112%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.6s;
+}
+.item:hover .layer{
+    cursor: pointer;
+   top: 0;
+}
+.my-modal{
+    
+    z-index: 9999;
+}
